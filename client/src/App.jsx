@@ -5,6 +5,7 @@ import Appointment from "./pages/Appointment";
 import Doctors from "./pages/Doctors";
 import Profile from "./pages/Profile";
 import Contact from "./pages/Contact";
+import Header from "./components/layouts/Header";
 import Login from "./pages/Login";
 import About from "./pages/About";
 import Home from "./pages/Home";
@@ -12,6 +13,7 @@ import Home from "./pages/Home";
 const App = () => {
   return (
     <div className="mx-4 sm:mx-[10%]">
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/login" element={<Login />} />
